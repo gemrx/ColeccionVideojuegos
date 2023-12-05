@@ -14,7 +14,7 @@ public class Database {
                 Class.forName("org.mariadb.jdbc.Driver");
                 
                 // Conectarse a la base de datos
-                Connection connection =  DriverManager.getConnection("jdbc:mariadb://localhost:3306/coleccion_videojuegos", "root", "password");
+                Connection connection =  DriverManager.getConnection("jdbc:mariadb://localhost:3306/coleccion_videojuegos", "root", "");
                 return connection;
             } catch (SQLException | ClassNotFoundException e) {
                 return null;
